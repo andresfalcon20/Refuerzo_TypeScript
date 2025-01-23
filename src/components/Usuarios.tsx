@@ -12,7 +12,7 @@ export const Usuarios = () => {
     useEffect(() => {
         //LLAMAR AL API
         reqResApi.get<ListaUsuario>("/users").then(resp => {
-            
+
             setUsers(resp.data.data)
 
         })
@@ -52,7 +52,7 @@ const itemRowsTable = ({avatar, id, first_name, last_name, email}: Usuario) => {
     return (
         <div>
             <h3>
-                Lista Usuarios
+                Usuarios
             </h3>
             <table className="table table-bordered table-striped">
                 <thead>
